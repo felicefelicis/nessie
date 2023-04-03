@@ -2,7 +2,7 @@
   "name": "nessie",
   "version": "0.0.1",
   "description": "outil de capture mythique",
-  "bin": "./main.msj",
+  "bin": "./main.mjs",
   "private": true,
   "dependencies": {
     "argparse": "^2.0.1",
