@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 import { ArgumentParser } from 'argparse';
 import puppeteer from 'puppeteer';
+import path from 'node:path';
 
 const parser = new ArgumentParser({
   add_help: true,
@@ -28,7 +29,7 @@ parser.add_argument(
   '-f', '--file',
   {
     help: 'le html de la pub',
-    default: 'index.html'
+    default: path.join(process.cwd(), 'index.html')
   }
 );
 parser.add_argument(
